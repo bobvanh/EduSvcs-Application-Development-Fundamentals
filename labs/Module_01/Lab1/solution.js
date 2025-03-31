@@ -1,4 +1,4 @@
-import { EventStoreDBClient,jsonEvent } from "@eventstore/db-client";
+import { EventStoreDBClient, jsonEvent } from "@eventstore/db-client";
 import { v4 as uuid } from 'uuid'
 
 const client = EventStoreDBClient.connectionString("esdb://localhost:2113?tls=false");
