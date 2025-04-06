@@ -1,0 +1,1 @@
+{"actualSales":{"total":100},"checkpoint":"2"}
