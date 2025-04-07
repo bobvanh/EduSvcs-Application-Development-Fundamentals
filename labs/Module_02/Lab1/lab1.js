@@ -15,11 +15,12 @@ for await (const resolvedEvent of stream) {
     const data = event.data;
     const amount = parseFloat(data.amount || 0);
 
-    if (event.item == "keyboard") {
+    if (data.item === "keyboard") {
 
         if (event.type === "itemAdded") {
             orderSales.pendingSales += amount;
-        } else if (event.type === "itemShipped") {
+        } 
+        else if (event.type === "itemShipped") {
             orderSales.pendingSales -= amount;
             orderSales.actualSales += amount;
         }
